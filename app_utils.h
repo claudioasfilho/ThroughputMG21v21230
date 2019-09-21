@@ -72,7 +72,7 @@ extern "C" {
 
 /* COMPILE TIME OPTIONS FOR FIXED MODES BETWEEN TWO KITS. UNCOMMENT ONLY ONE. */
 //#define SEND_FIXED_TRANSFER_COUNT				10000 						          // Uncomment this if you want to send a fixed amount of indications/notifications on each button press
-//#define SEND_FIXED_TRANSFER_TIME				((HW_TICKS_PER_SECOND)*5)     // Uncomment this if you want to send indications/notifications for a fixed amount of time
+#define SEND_FIXED_TRANSFER_TIME				((HW_TICKS_PER_SECOND)*5)     // Uncomment this if you want to send indications/notifications for a fixed amount of time
 
 // Main state enum
 typedef enum {
