@@ -53,7 +53,7 @@ extern "C" {
 #define NOTIFICATION_GATT_HEADER            3       // GATT operation header byte count
 #define L2CAP_HEADER                        4       // Header byte count
 #define HW_TICKS_PER_SECOND      (uint16_t)(32768)  // Hardware clock ticks that equal one second
-#define TX_POWER 100
+#define TX_POWER 0//100
 
 #define PHY_1M (0x01)
 #define PHY_2M (0x02)
