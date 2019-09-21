@@ -277,6 +277,58 @@ void refresh_display(void) {
   GRAPHICS_AppendString(operationCountString);
 
   GRAPHICS_Update();
+
+#ifndef SERIALOUT
+
+    printf("-------------------------------\n");
+    printf(txPowerString);
+    printf("\r\n");
+
+    printf(statusString);
+    printf("\r\n");
+
+    printf(phyString);
+    printf("\r\n");
+
+    printf(connIntervalString);
+    printf("\r\n");
+
+    printf(pduSizeString);
+    printf("\r\n");
+
+    printf(mtuSizeString);
+    printf("\r\n");
+
+    printf(maxDataSizeString);
+    printf("\r\n");
+
+    printf(notifyString);
+    printf("\r\n");
+
+    printf(indicateString);
+    printf("\r\n");
+
+    printf(throughputString);
+    printf("\r\n");
+
+    printf(operationCountString);
+    printf("\r\n");
+
+#if 0
+    printf("RESULTS:\n\n");
+    printf("Bits sent: %lu\n", bitsSent);
+    printf("Time elapsed: %.3f sec\n", endTime);
+    printf("Host calculated throughput: %lu bps\n", throughput);
+    printf("Operation count: %lu\n", operationCount);
+#endif
+
+    printf("-------------------------------\n\n");
+    printf("\b\b\b\b\b\b\b\b\b\b\b\b");
+
+
+
+#endif
+
 }
 
 /**
